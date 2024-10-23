@@ -7,9 +7,9 @@ Test Teardown    Fechar o navegador
 
 
 *** Test Cases ***
-CT1 - Cadastro de conta com CPF invalido
-	[Documentation]    Esse teste verifica o login de um usuario ativo
-	[Tags]             cadastro_CPFInvalido
+CT1 - Cadastro de conta com CPF inativo
+	[Documentation]    Esse teste verifica o cadastro um usuario com um cpf inativo
+	[Tags]             cadastro_CPFInativo
 	Acessar a pagina home do site
     Clicar no Botão de Login
 	Entrar na Aba "AINDA NÃO TENHO UMA CONTA"
@@ -17,9 +17,9 @@ CT1 - Cadastro de conta com CPF invalido
 	Verificar Impedimento de Cadastro
 
 
-CT2 - Realizar Login
+CT2 - Realizar Login com credenciais já definidas
     [Documentation]    Esse teste verifica o login de um usuario ativo
-	[Tags]             cadastro_CPFInvalido
+	[Tags]             cadastro_Login 
 	Acessar a pagina home do site
     Clicar no Botão de Login
 	Selecionar Campo "Empresa"
