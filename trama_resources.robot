@@ -24,17 +24,20 @@ Abrir o navegador
 Fechar o navegador
     Sleep    2
 	Close Browser
+
 Verificar Impedimento de Cadastro
     Take Screenshot    evidencia
+
 Acessar a pagina home do site
 	Go To	url=${URL}
 
 Clicar no Botão de Login
     Click Element    xpath://a[@href='../Login/login.html']
+    
 Entrar na Aba "AINDA NÃO TENHO UMA CONTA"
     Click Element    xpath://a[@href='../Cadastro/cadastro.html']  
 
-Preencher dados válidos uma nova conta, mas inserir no campo "CPF" numeros invalidos. 
+Preencher dados válidos uma nova conta, mas inserir no campo "CPF" numeros inexistente
     Input Text    xpath://input[@id='nome']       ${NOME}
     Input Text    xpath://input[@id='sobrenome']  ${SOBRENOME}
     Input Text    xpath://input[@id='email']      ${EMAIL}

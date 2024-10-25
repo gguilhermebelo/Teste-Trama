@@ -13,7 +13,7 @@ CT1 - Cadastro de conta com CPF inativo
 	Acessar a pagina home do site
     Clicar no Botão de Login
 	Entrar na Aba "AINDA NÃO TENHO UMA CONTA"
-    Preencher dados válidos uma nova conta, mas inserir no campo "CPF" numeros invalidos.
+    Preencher dados válidos uma nova conta, mas inserir no campo "CPF" numeros inexistente
 	Verificar Impedimento de Cadastro
 
 
