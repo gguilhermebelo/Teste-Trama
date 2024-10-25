@@ -13,7 +13,7 @@ ${EMAIL}	gui@belo
 ${SENHA}	Senha@1234
 ${MENSAGEM_FALHA_LOGIN}    CPF inválido!
 ${CNPJ}    98.509.568/0001-37
-${TITULO}    FORMULÁRIO DE INSERÇÃO DE PRODUTO
+${TITULO}    TRAMA - MODA SUSTENTÁVEL 
 
 
 *** Keywords ***
@@ -33,7 +33,7 @@ Acessar a pagina home do site
 
 Clicar no Botão de Login
     Click Element    xpath://a[@href='../Login/login.html']
-    
+
 Entrar na Aba "AINDA NÃO TENHO UMA CONTA"
     Click Element    xpath://a[@href='../Cadastro/cadastro.html']  
 
@@ -60,5 +60,5 @@ Inserir credencias requeridas (CNPJ e senha) ja cadastradas no banco
 Clicar em "Entrar"
     Click Button  xpath://input[@value='ENTRAR']
 
-Verificar se o título da página 
+Verificar se o título da página é TRAMA - MODA SUSTENTÁVEL
     Title Should Be    title=${TITULO}

@@ -25,6 +25,6 @@ CT2 - Realizar Login com credenciais já definidas
 	Selecionar Campo "Empresa"
 	Inserir credencias requeridas (CNPJ e senha) ja cadastradas no banco
 	Clicar em "Entrar"
-	Verificar se o título da página
+	Verificar se o título da página é TRAMA - MODA SUSTENTÁVEL
 
 
