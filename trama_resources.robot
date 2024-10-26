@@ -22,7 +22,6 @@ Abrir o navegador
 	Maximize Browser Window
 
 Fechar o navegador
-    Sleep    2
 	Close Browser
 
 Verificar Impedimento de Cadastro
@@ -45,6 +44,7 @@ Preencher dados válidos uma nova conta, mas inserir no campo "CPF" numeros inex
     Input Text    xpath://input[@id='senha']      ${SENHA}
     Input Text    xpath://input[@id='cpf']        ${CPF}
     Click Button  xpath://input[@type='submit' and @value='Enviar']
+    Sleep    2
 
 Verificar mensagem de falha no login
 	${MENSAGEM_TELA}=	Get webElement	id:toast-container
@@ -59,6 +59,8 @@ Inserir credencias requeridas (CNPJ e senha) ja cadastradas no banco
 
 Clicar em "Entrar"
     Click Button  xpath://input[@value='ENTRAR']
+    Sleep    2
 
 Verificar se o título da página é TRAMA - MODA SUSTENTÁVEL
+    Screenshot    login
     Title Should Be    title=${TITULO}
