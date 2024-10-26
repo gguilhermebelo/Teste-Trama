@@ -25,7 +25,7 @@ Fechar o navegador
 	Close Browser
 
 Verificar Impedimento de Cadastro
-    Take Screenshot    evidencia
+    Take Screenshot    evidencia_CT1
 
 Acessar a pagina home do site
 	Go To	url=${URL}
@@ -62,5 +62,5 @@ Clicar em "Entrar"
     Sleep    2
 
 Verificar se o título da página é TRAMA - MODA SUSTENTÁVEL
-    Screenshot    login
+    Take Screenshot    evidencia_CT2
     Title Should Be    title=${TITULO}
