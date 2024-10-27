@@ -48,5 +48,26 @@ CT4 - Visualização do Dashboard
 	Clicar no botão de "Dashboard"
     Verificar o texto da página como "DETALHES DAS VENDAS"
  
+CT5 - Cadastro de produto sem nome
+    [Documentation]     Esse teste verifica o cadastro de um produto sem nome
+	[Tags]    produto_sem_nome
+	Acessar a pagina home do site
+    Clicar no Botão de Login
+	Selecionar Campo "Empresa"
+	Inserir credencias (CNPJ e senha) ja cadastradas no banco
+	Clicar em "Entrar"
+    Preencher Formulario de Inserção de produto sem nome
+	Enviar Formulario de Inserção de produto
+    Verificar se produto foi cadastrado "evidencia_CT5-2"
 
-
+CT6 - Cadastro de produto com preço em decimal
+    [Documentation]     Esse teste verifica o cadastro de um produto com preço decimal
+	[Tags]    preço_decimal
+	Acessar a pagina home do site
+    Clicar no Botão de Login
+	Selecionar Campo "Empresa"
+	Inserir credencias (CNPJ e senha) ja cadastradas no banco
+	Clicar em "Entrar"
+    Preencher Formulario de Inserção de produto decimal
+	Enviar Formulario de Inserção de produto
+    Verificar se produto foi cadastrado "evidencia_CT6-2"

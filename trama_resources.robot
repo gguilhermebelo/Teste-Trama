@@ -90,3 +90,30 @@ Verificar o texto da página como "DETALHES DAS VENDAS"
     Element Text Should Be    xpath=//h5[contains(text(),'DETALHES DAS VENDAS')]    ${TEXTO_DETALHE}
     Sleep    2
     Take Screenshot    evidencia_CT4
+
+Preencher Formulario de Inserção de produto sem nome
+    Input Text    xpath://input[@id='marca']        "Marca Qualquer"
+    Input Text    xpath://input[@id='preco']        540
+    Input Text    xpath://input[@id='descricao']        "Descricao Legal"
+    Choose File    xpath://input[@id="imagem"]    ${CURDIR}\\roupa.png
+    Sleep    2
+    Take Screenshot    evidencia_CT5-1
+
+Preencher Formulario de Inserção de produto decimal
+    Input Text    xpath://input[@id='nome']        "Nome Produto"
+    Input Text    xpath://input[@id='marca']        "Marca Qualquer"
+    Input Text    xpath://input[@id='preco']        123,74
+    Input Text    xpath://input[@id='descricao']        "Descricao Legal"
+    Choose File    xpath://input[@id="imagem"]    ${CURDIR}\\roupa.png
+    Sleep    2
+    Take Screenshot    evidencia_CT6-2
+
+Enviar Formulario de Inserção de produto
+    Click Element    xpath://input[@value="Inserir Produto"]
+
+Verificar se produto foi cadastrado "${evidencia}"
+    Sleep    2
+    Click Element    xpath://button[@class='login-btn']
+    Sleep    2
+    Take Screenshot    ${evidencia}
+    
