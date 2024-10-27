@@ -58,7 +58,7 @@ CT5 - Cadastro de produto sem nome
 	Clicar em "Entrar"
     Preencher Formulario de Inserção de produto sem nome
 	Enviar Formulario de Inserção de produto
-    Verificar se produto foi cadastrado "evidencia_CT5-2"
+    Verificar se produto foi cadastrado sem nome
 
 CT6 - Cadastro de produto com preço em decimal
     [Documentation]     Esse teste verifica o cadastro de um produto com preço decimal
@@ -70,4 +70,4 @@ CT6 - Cadastro de produto com preço em decimal
 	Clicar em "Entrar"
     Preencher Formulario de Inserção de produto decimal
 	Enviar Formulario de Inserção de produto
-    Verificar se produto foi cadastrado "evidencia_CT6-2"
+    Verificar se produto foi cadastrado valor decimal

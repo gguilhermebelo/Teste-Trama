@@ -111,9 +111,19 @@ Preencher Formulario de Inserção de produto decimal
 Enviar Formulario de Inserção de produto
     Click Element    xpath://input[@value="Inserir Produto"]
 
-Verificar se produto foi cadastrado "${evidencia}"
+Verificar se produto foi cadastrado sem nome
     Sleep    2
     Click Element    xpath://button[@class='login-btn']
+    Sleep    1
+    Take Screenshot     evidencia_CT5-2
+    Element Text Should Be    xpath=/html/body/div/div/div[2]/h1    "Nome Produto"
+    Sleep    1
+
+Verificar se produto foi cadastrado valor decimal
     Sleep    2
-    Take Screenshot    ${evidencia}
+    Click Element    xpath://button[@class='login-btn']
+    Sleep    1
+    Take Screenshot     evidencia_CT6-2
+    Element Text Should Be    xpath=/html/body/div/div/div[3]/h5    123,74
+    Sleep    1
     
