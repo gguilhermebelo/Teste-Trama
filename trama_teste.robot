@@ -10,10 +10,10 @@ Test Teardown    Fechar o navegador
 CT1 - Cadastro de conta com CPF inativo
 	[Documentation]    Esse teste verifica o cadastro um usuario com um cpf inativo
 	[Tags]             cadastro_CPFInativo
-	Acessar a pagina home do site
-        Clicar no Botão de Login
+    Acessar a pagina home do site
+    Clicar no Botão de Login
 	Entrar na Aba "AINDA NÃO TENHO UMA CONTA"
-        Preencher dados válidos uma nova conta, mas inserir no campo "CPF" numeros inexistente
+    Preencher dados válidos uma nova conta, mas inserir no campo "CPF" numeros inexistente
 	Verificar Impedimento de Cadastro
 
 
@@ -21,7 +21,7 @@ CT2 - Realizar Login com credenciais já definidas
     [Documentation]    Esse teste verifica o login de um usuario ativo
 	[Tags]             cadastro_Login 
 	Acessar a pagina home do site
-        Clicar no Botão de Login
+    Clicar no Botão de Login
 	Selecionar Campo "Empresa"
 	Inserir credencias requeridas (CNPJ e senha) ja cadastradas no banco
 	Clicar em "Entrar"
@@ -46,7 +46,7 @@ CT4 - Visualização do Dashboard
 	Inserir credencias (CNPJ e senha) ja cadastradas no banco
 	Clicar em "Entrar"
 	Clicar no botão de "Dashboard"
-        Verificar o texto da página como "DETALHES DAS VENDAS"
+    Verificar o texto da página como "DETALHES DAS VENDAS"
  
 
 
