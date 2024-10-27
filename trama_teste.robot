@@ -17,14 +17,14 @@ CT1 - Login Cliente
 		Clicar em "Entrar"
 		Verificar se o título da página é TRAMA - MODA SUSTENTÁVEL
 
-CT2 - Cadastro de produto sem imagem
-    [Documentation]     Esse teste verifica o cadastro de um produto sem preço
-	[Tags]    cadastro_produto
+CT2 - Visualização do Dashboard
+    [Documentation]     Esse teste verifica a visualização do dashboard de vendas
+	[Tags]    visualizar_vendas
 	    Acessar a pagina home page do site Trama
 		Acessar a pagina de login do sistema
 		Selecionar Campo "Empresa"
 		Inserir credencias requeridas (CNPJ e senha) ja cadastradas no banco
 		Clicar em "Entrar"
-		Preencher dados válidos para o novo produto menos a imagem
-		Clicar em "Seus Produtos"
-		Verificar o valor do src da imagem
+		Clicar no botão de "Dashboard"
+        Verificar o texto da página como "DETALHES DAS VENDAS"
+ 
