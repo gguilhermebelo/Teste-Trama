@@ -8,6 +8,7 @@ ${URL}		http://localhost/trama/SemLogin/index.html
 ${NOME}    Guilherme
 ${SOBRENOME}    Belo
 ${CPF}    12345678910
+${CPFVALIDO}    062.094.130-80
 ${TELEFONE}	41985108854
 ${EMAIL}	gui@belo
 ${SENHA}	Senha@1234
@@ -71,7 +72,7 @@ Selecionar Campo "Cliente"
 
 
 Inserir credencias requeridas (CPF e senha) ja cadastradas no banco
-    Input Text    xpath://input[@id='cpf']        ${CPF}
+    Input Text    xpath://input[@id='cpf']        ${CPFVALIDO}
     Input Text    xpath://input[@id='senha']      ${SENHA}
 
 Verificar se o título é TRAMA - MODA SUSTENTÁVEL
